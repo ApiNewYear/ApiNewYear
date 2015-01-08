@@ -13,13 +13,8 @@
 #include <IConnection.h>
  
 namespace ApiNewYear {
-	/**
-	 * @brief Base class for the main loop of the ZIA server.
-	 * @details Base class that englobes all types of modules, including the
-	 * execution of the IExecutionLine.
-	 */
+
 	class IServer {
-	public:
 		virtual ~IServer() {}
 
 		/**
@@ -70,11 +65,6 @@ namespace ApiNewYear {
 		 * @return a reference to the ExecutionLine.
 		 */
 		virtual IExecutionLine& getExecutionLine() = 0;
-
-	protected:
-
-	private:
-		
 	};
 
 }
