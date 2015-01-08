@@ -449,7 +449,7 @@ a:hover {
 
 header {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
@@ -879,3 +879,24 @@ footer a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
 
+#speedbar {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#speedbar li {
+    display: inline;
+}
+#speedbar li a {
+    border-radius: 5px;
+    padding: 1px 10px;
+    margin-right: 5px;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #FFF;
+}
+#speedbar li a:hover, #speedbar .selected a {
+    background-color: #2D9DED;
+    color: white;
+}

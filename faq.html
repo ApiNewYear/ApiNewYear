@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>FAQ | ApiNewYear - ZIA API 2017</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>ApiNewYear</h1>
+        <h2>ZIA API 2017 - Epitech</h2>
+        <a href="https://github.com/ApiNewYear/api_new_year" class="button"><small>View project on</small> GitHub</a>
+      </div>
+      <nav id="speedbar">
+	<ul>
+	  <li><a href=index.html>Accueil</a></li>
+	  <li><a href="uml.html">UML</a></li>
+	  <li><a href="doc/index.html">Documentation</a></li>
+	  <li><a href="example.html">Exemple</a></li>
+	  <li class="selected"><a href="faq.html">FAQ</a></li>
+	  <li><a href="https://github.com/ApiNewYear/api_new_year/issues">Bug Tracker</a></li>
+	  <li><a href="mailto:zia.apinewyear@gmail.com?subject=[MaVille] MonSujet">Contactez-nous</a></li>
+	</ul>
+      </nav>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+	  <h3>Quelques questions en vrac...</h3>
+	  <ul>
+	    <li><strong>Un client se connecte à mon serveur. Mon objet Client doit-il hériter d'une interface ?</strong><br />
+	      Oui. Vous disposez d’une interface IHttpClient prévue pour cela.</li><br />
+	    <li><strong>Vous devez intercepter sa requête, la traiter et lui renvoyer une réponse. Comment faire ?</strong><br />
+	      L’interface IHttpClient permet l’accès à un objet Request (IHttpRequest) et un objet Response 
+	      (IHttpResponse). Vous devrez créer les modules chargés de ces opérations et modifier ainsi votre objet
+	      Client au cours de vos traitements (cf. question ci-dessous).</li><br />
+	    <li><strong>Comment créer un module ?</strong><br />
+	      Créez une classe qui hérite de l’interface IModule. Pour chaque module, vous devrez créer un objet qui 
+	      hérite de IConnection (module de connexion) ou IObserver (autres modules) . IConnection sera rattaché au IServer tandis que 
+	      IObserver sera rattaché au fil d'exécution (IExecutionLine). Leur méthode "update" sera appelée lorsque la chaîne d'exécution 
+	      exécutera les modules les uns après les autres (méthode "run" de IServer ou IExecutionLine).</li><br />
+	    <li><strong>Qu'est-ce qu'un Observer ?</strong><br />
+	      Cette notion est l'un des fondamentaux du pattern Observer. Notre API est basée sur cette logique afin de 
+	      s'affranchir des problématiques de chargement dynamique des modules. Dans ce pattern, on y retrouve deux 
+	      concepts : Subject et Observers. En théorie, un objet Subject dépend de plusieurs autres objets (Observers). 
+	      Ces derniers sont notifiés lorsque le Subject change d'état. Dans l'API, le Subject est la chaîne d'exécution 
+	      et les Observers représentent les modules. Lorsque cette chaîne est lancée, les modules sont appelés. 
+	      Chaque fois qu'un Observer est rattaché à cette chaîne, des traitements particuliers peuvent tout à fait
+	      être effectués sur celle-ci. Vous êtes libre de faire ce que vous souhaitez à ce niveau.</li><br />
+	    <li><strong>Comment exécuter mes modules ?</strong><br />
+	      Commencez par créer votre chaîne d’exécution en héritant de IExecutionLine et rattachez-y vos modules en 
+	      appelant leur méthode « hook ». Une fois les modules attachés, appelez la méthode « run » de cette 
+	      chaîne. Celle-ci exécutera vos modules dans un certain ordre.</li><br />
+	    <li><strong>Dans quel ordre mes modules sont-ils exécutés ?</strong><br />
+	      Lors de sa création, vous indiquez la catégorie à laquelle votre module appartient et lui affectez une priorité. 
+	      Ensuite, la chaine d’exécution chargera le module dans la catégorie qui lui aura été assignée. Puis, elle 
+	      exécutera les modules en fonction de leur priorité au sein de chacune de ces catégories.</li><br />
+	    <li><strong>Quelles doivent être ces catégories ?</strong><br />
+	      L'API impose 4 catégories de modules (modules de connexion + cf. enum eModuleType). Pour le bon fonctionnement de 
+	      votre projet, il est essentiel que vous exécutez en premier lieu vos modules de connexion puis votre chaine d’exécution.
+	      Cette dernière commence par exécuter les modules REQUEST, ensuite les CGI et RESPONSE.</li><br />
+	  </ul>
+	</section>
+
+	
+        <aside id="sidebar">
+          <a href="https://github.com/ApiNewYear/api_new_year/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ApiNewYear/api_new_year/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

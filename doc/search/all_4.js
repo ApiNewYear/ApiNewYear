@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['getcode',['getCode',['../class_api_new_year_1_1_i_http_response.html#a850ea240cdb644d8b49ddb16310dd3e5',1,'ApiNewYear::IHttpResponse']]],
+  ['getdata',['getData',['../class_api_new_year_1_1_i_http_query.html#a3109f3d1aab7d001ac257b91f178ada8',1,'ApiNewYear::IHttpQuery']]],
+  ['getexecutionline',['getExecutionLine',['../class_api_new_year_1_1_i_server.html#a5f36cff09900d4b36944fa01ab011598',1,'ApiNewYear::IServer']]],
+  ['getheaders',['getHeaders',['../class_api_new_year_1_1_i_http_query.html#a475e5ccff6ba392d2be683c07cb06689',1,'ApiNewYear::IHttpQuery']]],
+  ['gethost',['getHost',['../class_api_new_year_1_1_i_socket.html#a39382074bf1356fe8249743a0885b0c3',1,'ApiNewYear::ISocket']]],
+  ['gethttpclient',['getHttpClient',['../class_api_new_year_1_1_i_execution_line.html#a5251a5c5146e2cf4736acab8c9eee03b',1,'ApiNewYear::IExecutionLine']]],
+  ['getip',['getIp',['../class_api_new_year_1_1_i_socket.html#aa7b741d5f9d698a1db19b0e40b166e63',1,'ApiNewYear::ISocket']]],
+  ['getlocation',['getLocation',['../class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26',1,'ApiNewYear::IModule']]],
+  ['getlogger',['getLogger',['../class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b',1,'ApiNewYear::IModule']]],
+  ['getmessage',['getMessage',['../class_api_new_year_1_1_i_http_response.html#aac01eec2876355a86d51d5954fc533da',1,'ApiNewYear::IHttpResponse']]],
+  ['getmethod',['getMethod',['../class_api_new_year_1_1_i_http_request.html#ae241e64eb13d7ccaf53766bcf5ac9353',1,'ApiNewYear::IHttpRequest']]],
+  ['getname',['getName',['../class_api_new_year_1_1_i_connection.html#a31634789493a3828ce4ac4551c4ad252',1,'ApiNewYear::IConnection::getName()'],['../class_api_new_year_1_1_i_module.html#a6ba42ed326b4159901973911c0d6c6a2',1,'ApiNewYear::IModule::getName()'],['../class_api_new_year_1_1_i_observer.html#a59e00e1c40c6be3a281731d01f6ee163',1,'ApiNewYear::IObserver::getName()']]],
+  ['getport',['getPort',['../class_api_new_year_1_1_i_socket.html#a58f83e0d99158add7c271bbac47d3e04',1,'ApiNewYear::ISocket']]],
+  ['getpriority',['getPriority',['../class_api_new_year_1_1_i_connection.html#ad594e41ec8a375c71bcb6956cb9b9eaa',1,'ApiNewYear::IConnection::getPriority()'],['../class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c',1,'ApiNewYear::IModule::getPriority()'],['../class_api_new_year_1_1_i_observer.html#a9ad75bee0a0506113c69e07bc3db90c1',1,'ApiNewYear::IObserver::getPriority()']]],
+  ['getrequest',['getRequest',['../class_api_new_year_1_1_i_http_client.html#a966719938c3c6aa6443d67837008442a',1,'ApiNewYear::IHttpClient']]],
+  ['getresponse',['getResponse',['../class_api_new_year_1_1_i_http_client.html#ad187d066c0d1bed9bcc94078ec0e3c5a',1,'ApiNewYear::IHttpClient']]],
+  ['getsocket',['getSocket',['../class_api_new_year_1_1_i_http_client.html#ad038a4912ca0607b32b9b7ce522703e9',1,'ApiNewYear::IHttpClient::getSocket()'],['../class_api_new_year_1_1_i_socket.html#a44ab596d025e78b39f75426c6381da5e',1,'ApiNewYear::ISocket::getSocket()']]],
+  ['geturi',['getUri',['../class_api_new_year_1_1_i_http_request.html#a286734ad3aa50bcd23c287ba06b4821c',1,'ApiNewYear::IHttpRequest']]],
+  ['getversion',['getVersion',['../class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068',1,'ApiNewYear::IModule']]]
+];

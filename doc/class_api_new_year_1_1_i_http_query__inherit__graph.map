@@ -1,0 +1,4 @@
+<map id="ApiNewYear::IHttpQuery" name="ApiNewYear::IHttpQuery">
+<area shape="rect" id="node2" href="$class_api_new_year_1_1_i_http_request.html" title="Base class representing the minimum information needed for each HTTP Request. " alt="" coords="5,204,181,340"/>
+<area shape="rect" id="node3" href="$class_api_new_year_1_1_i_http_response.html" title="Base class representing the minimum information needed for each HTTP Response. " alt="" coords="205,204,392,340"/>
+</map>
