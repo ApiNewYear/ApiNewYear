@@ -31,19 +31,19 @@ namespace ApiNewYear {
 		 * @details IHttpClient get IHttpRequest representing the request of the client.
 		 * @return A reference to an object of type IHttpRequest.
 		 */
-		virtual IHttpRequest& getRequest(void) const=0;
+		virtual IHttpRequest& getRequest(void)=0;
 		/**
 		 * @brief Getter for client response.
 		 * @details IHttpClient get IHttpResposne representing the response for the client.
 		 * @return A reference to an object of type IHttpResponse.
 		 */
-		virtual IHttpResponse& getResponse(void) const=0;
+		virtual IHttpResponse& getResponse(void)=0;
 		/**
 		 * @brief Getter for client socket.
 		 * @details IHttpClient get ISocket containing client connection information and socket.
 		 * @return A reference to an object of type ISocket.
 		 */
-		virtual ISocket& getSocket(void) const=0;
+		virtual ISocket& getSocket(void)=0;
 
 	protected:
 
