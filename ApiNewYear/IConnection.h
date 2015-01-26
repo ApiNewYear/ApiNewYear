@@ -9,6 +9,8 @@
 #ifndef APINEWYEAR_ICONNECTION_H
 #define APINEWYEAR_ICONNECTION_H
 
+#include <ISocket.h>
+
 namespace ApiNewYear {
 	/**
 	 * @brief Base class allowing the execution of connection modules in IServer.
@@ -47,3 +49,5 @@ namespace ApiNewYear {
 	private:
 	};
 }
+
+#endif
