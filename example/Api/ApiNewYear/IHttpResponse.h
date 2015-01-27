@@ -20,7 +20,7 @@ namespace ApiNewYear {
 	 */
 	class IHttpResponse: public IHttpQuery {
 	public:
-		virtual IHttpResponse() {
+		virtual ~IHttpResponse() {
 		}
 		/**
 		 * @brief Getter for status code.

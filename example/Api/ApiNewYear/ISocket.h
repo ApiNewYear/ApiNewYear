@@ -11,9 +11,9 @@
 
 #include <string>
 
-#ifdef WIN32
+#ifdef _WIN32
 #include <winsock2.h>
-#elif defined (linux)
+#elif defined (__linux__)
 typedef int SOCKET;
 #else
 #error undefined for this platform

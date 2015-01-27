@@ -9,9 +9,17 @@
 #ifndef APINEWYEAR_ICONNECTION_H
 #define APINEWYEAR_ICONNECTION_H
 
-namespace ApiNewYear {
+#include <ISocket.h>
 
+namespace ApiNewYear {
+	/**
+	 * @brief Base class allowing the execution of connection modules in IServer.
+	 * @details Establishes the base architecture to allow connection modules to be 
+	 * executed by defining how they are executed by the IServer, and what information
+	 * the IServer has for each connection module.
+	 */
 	class IConnection {
+	public:
 		virtual ~IConnection() {
 		}
 		/**
@@ -35,5 +43,11 @@ namespace ApiNewYear {
 		 * @return int containing the success or error code of the modules main function.
 		 */
 		virtual int update(SOCKET socket, IHttpClient* client)=0;
+	
+	protected:
+
+	private:
 	};
 }
+
+#endif
