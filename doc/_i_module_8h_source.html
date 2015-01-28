@@ -119,52 +119,55 @@ $(document).ready(function(){initNavTree('_i_module_8h_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define APINEWYEAR_IModule_H_</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_api_new_year.html">ApiNewYear</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">class </span>IExecutionLine;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">class </span>ILogger;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span>IServer;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_api_new_year.html">ApiNewYear</a> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_api_new_year_1_1_i_module.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_api_new_year_1_1_i_module.html">IModule</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_api_new_year_1_1_i_module.html">IModule</a>() {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#af98f6f9ee1238a83a361b35586c3630e">init</a>(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03">hook</a>(<a class="code" href="class_api_new_year_1_1_i_execution_line.html">IExecutionLine</a>&amp; executionLine)= 0;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03">hook</a>(<a class="code" href="class_api_new_year_1_1_i_server.html">IServer</a>&amp; server) = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#aa63c01724a72c40ff95af1b712e48b57">unhook</a>(<a class="code" href="class_api_new_year_1_1_i_execution_line.html">IExecutionLine</a>&amp; executionLine)= 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a05df59913732f4868e4e8b8553e303aa">destroy</a>(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_api_new_year_1_1_i_module.html#a6ba42ed326b4159901973911c0d6c6a2">getName</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c">getPriority</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068">getVersion</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26">getLocation</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;eModuleType.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_api_new_year.html">ApiNewYear</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">class </span>IExecutionLine;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span>ILogger;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">class </span>IServer;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_api_new_year.html">ApiNewYear</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_api_new_year_1_1_i_module.html">   28</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_api_new_year_1_1_i_module.html">IModule</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_api_new_year_1_1_i_module.html">IModule</a>() {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#af98f6f9ee1238a83a361b35586c3630e">init</a>(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03">hook</a>(<a class="code" href="class_api_new_year_1_1_i_execution_line.html">IExecutionLine</a>&amp; executionLine)= 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03">hook</a>(<a class="code" href="class_api_new_year_1_1_i_server.html">IServer</a>&amp; server) = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#aa63c01724a72c40ff95af1b712e48b57">unhook</a>(<a class="code" href="class_api_new_year_1_1_i_execution_line.html">IExecutionLine</a>&amp; executionLine)= 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a05df59913732f4868e4e8b8553e303aa">destroy</a>(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_api_new_year_1_1_i_module.html#a6ba42ed326b4159901973911c0d6c6a2">getName</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c">getPriority</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">virtual</span> eModuleType <a class="code" href="class_api_new_year_1_1_i_module.html#a4e6b18a634258454b022e749dd3f2271">getType</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068">getVersion</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_api_new_year_1_1_i_logger.html">ILogger</a>&amp; <a class="code" href="class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b">getLogger</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26">getLocation</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    };</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_api_new_year_1_1_i_logger.html">ILogger</a>&amp; <a class="code" href="class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b">getLogger</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    };</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_api_new_year_1_1_i_server_html"><div class="ttname"><a href="class_api_new_year_1_1_i_server.html">ApiNewYear::IServer</a></div><div class="ttdoc">Base class for the main loop of the ZIA server. </div><div class="ttdef"><b>Definition:</b> IServer.h:21</div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_a7e97efceb8ef4922fb4c413db6a94a03"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03">ApiNewYear::IModule::hook</a></div><div class="ttdeci">virtual int hook(IExecutionLine &amp;executionLine)=0</div><div class="ttdoc">hooks the module to the ExecutionLine </div></div>
 <div class="ttc" id="namespace_api_new_year_html"><div class="ttname"><a href="namespace_api_new_year.html">ApiNewYear</a></div><div class="ttdef"><b>Definition:</b> eModuleType.h:12</div></div>
-<div class="ttc" id="class_api_new_year_1_1_i_module_html"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html">ApiNewYear::IModule</a></div><div class="ttdoc">Base class representing the minimum requirements for a module. </div><div class="ttdef"><b>Definition:</b> IModule.h:27</div></div>
+<div class="ttc" id="class_api_new_year_1_1_i_module_html"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html">ApiNewYear::IModule</a></div><div class="ttdoc">Base class representing the minimum requirements for a module. </div><div class="ttdef"><b>Definition:</b> IModule.h:28</div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_a6e783c78f65d2064d6429fc32d6a5068"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068">ApiNewYear::IModule::getVersion</a></div><div class="ttdeci">virtual float getVersion() const =0</div><div class="ttdoc">Getter for version of the module. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_a00d8a0285252a76c4b286fb51bddeb26"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26">ApiNewYear::IModule::getLocation</a></div><div class="ttdeci">virtual const std::string &amp; getLocation() const =0</div><div class="ttdoc">Getter for location of the module. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_aa63c01724a72c40ff95af1b712e48b57"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#aa63c01724a72c40ff95af1b712e48b57">ApiNewYear::IModule::unhook</a></div><div class="ttdeci">virtual int unhook(IExecutionLine &amp;executionLine)=0</div><div class="ttdoc">unhooks the module from the ExecutionLine </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_aa018a32795d4f847ea9e659cb9cdcb7c"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c">ApiNewYear::IModule::getPriority</a></div><div class="ttdeci">virtual int getPriority() const =0</div><div class="ttdoc">Getter for priority of the module. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_logger_html"><div class="ttname"><a href="class_api_new_year_1_1_i_logger.html">ApiNewYear::ILogger</a></div><div class="ttdoc">Base class representing access to the server Logger. </div><div class="ttdef"><b>Definition:</b> ILogger.h:21</div></div>
+<div class="ttc" id="class_api_new_year_1_1_i_module_html_a4e6b18a634258454b022e749dd3f2271"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#a4e6b18a634258454b022e749dd3f2271">ApiNewYear::IModule::getType</a></div><div class="ttdeci">virtual eModuleType getType() const =0</div><div class="ttdoc">Getter for type of the module. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_af98f6f9ee1238a83a361b35586c3630e"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#af98f6f9ee1238a83a361b35586c3630e">ApiNewYear::IModule::init</a></div><div class="ttdeci">virtual int init(void)=0</div><div class="ttdoc">initializes the module. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_a05df59913732f4868e4e8b8553e303aa"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#a05df59913732f4868e4e8b8553e303aa">ApiNewYear::IModule::destroy</a></div><div class="ttdeci">virtual int destroy(void)=0</div><div class="ttdoc">destroys the module. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_module_html_a3d30949bf060481928066cd60865e66b"><div class="ttname"><a href="class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b">ApiNewYear::IModule::getLogger</a></div><div class="ttdeci">virtual ILogger &amp; getLogger() const =0</div><div class="ttdoc">Getter for logger. </div></div>
@@ -176,7 +179,7 @@ $(document).ready(function(){initNavTree('_i_module_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fbd1bb9ddcd6ac54786aebcf0c3b2015.html">api_new_year</a></li><li class="navelem"><a class="el" href="dir_c3ed1d2180bd1a9007443173aba4e088.html">ApiNewYear</a></li><li class="navelem"><b>IModule.h</b></li>
-    <li class="footer">Generated on Wed Jan 28 2015 18:38:16 for API New Year by
+    <li class="footer">Generated on Wed Jan 28 2015 19:29:18 for API New Year by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

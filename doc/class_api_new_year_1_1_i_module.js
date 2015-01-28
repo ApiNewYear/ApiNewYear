@@ -6,6 +6,7 @@ var class_api_new_year_1_1_i_module =
     [ "getLogger", "class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b", null ],
     [ "getName", "class_api_new_year_1_1_i_module.html#a6ba42ed326b4159901973911c0d6c6a2", null ],
     [ "getPriority", "class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c", null ],
+    [ "getType", "class_api_new_year_1_1_i_module.html#a4e6b18a634258454b022e749dd3f2271", null ],
     [ "getVersion", "class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068", null ],
     [ "hook", "class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03", null ],
     [ "hook", "class_api_new_year_1_1_i_module.html#a2414877b30571eec386e449b50900924", null ],

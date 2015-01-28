@@ -17,6 +17,7 @@ var searchData=
   ['getrequest',['getRequest',['../class_api_new_year_1_1_i_http_client.html#a52ba7efcd492a4df7f0ccf83755343cc',1,'ApiNewYear::IHttpClient']]],
   ['getresponse',['getResponse',['../class_api_new_year_1_1_i_http_client.html#ad4a3fd42124d751cf234c5178b2f9d1b',1,'ApiNewYear::IHttpClient']]],
   ['getsocket',['getSocket',['../class_api_new_year_1_1_i_http_client.html#a1ae9df4867d98129a3372ebe7f2fe90c',1,'ApiNewYear::IHttpClient::getSocket()'],['../class_api_new_year_1_1_i_socket.html#a44ab596d025e78b39f75426c6381da5e',1,'ApiNewYear::ISocket::getSocket()']]],
+  ['gettype',['getType',['../class_api_new_year_1_1_i_module.html#a4e6b18a634258454b022e749dd3f2271',1,'ApiNewYear::IModule']]],
   ['geturi',['getUri',['../class_api_new_year_1_1_i_http_request.html#a286734ad3aa50bcd23c287ba06b4821c',1,'ApiNewYear::IHttpRequest']]],
   ['getversion',['getVersion',['../class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068',1,'ApiNewYear::IModule']]]
 ];
