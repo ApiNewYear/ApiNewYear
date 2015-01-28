@@ -14,9 +14,9 @@ var searchData=
   ['getname',['getName',['../class_api_new_year_1_1_i_connection.html#a31634789493a3828ce4ac4551c4ad252',1,'ApiNewYear::IConnection::getName()'],['../class_api_new_year_1_1_i_module.html#a6ba42ed326b4159901973911c0d6c6a2',1,'ApiNewYear::IModule::getName()'],['../class_api_new_year_1_1_i_observer.html#a59e00e1c40c6be3a281731d01f6ee163',1,'ApiNewYear::IObserver::getName()']]],
   ['getport',['getPort',['../class_api_new_year_1_1_i_socket.html#a58f83e0d99158add7c271bbac47d3e04',1,'ApiNewYear::ISocket']]],
   ['getpriority',['getPriority',['../class_api_new_year_1_1_i_connection.html#ad594e41ec8a375c71bcb6956cb9b9eaa',1,'ApiNewYear::IConnection::getPriority()'],['../class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c',1,'ApiNewYear::IModule::getPriority()'],['../class_api_new_year_1_1_i_observer.html#a9ad75bee0a0506113c69e07bc3db90c1',1,'ApiNewYear::IObserver::getPriority()']]],
-  ['getrequest',['getRequest',['../class_api_new_year_1_1_i_http_client.html#a966719938c3c6aa6443d67837008442a',1,'ApiNewYear::IHttpClient']]],
-  ['getresponse',['getResponse',['../class_api_new_year_1_1_i_http_client.html#ad187d066c0d1bed9bcc94078ec0e3c5a',1,'ApiNewYear::IHttpClient']]],
-  ['getsocket',['getSocket',['../class_api_new_year_1_1_i_http_client.html#ad038a4912ca0607b32b9b7ce522703e9',1,'ApiNewYear::IHttpClient::getSocket()'],['../class_api_new_year_1_1_i_socket.html#a44ab596d025e78b39f75426c6381da5e',1,'ApiNewYear::ISocket::getSocket()']]],
+  ['getrequest',['getRequest',['../class_api_new_year_1_1_i_http_client.html#a52ba7efcd492a4df7f0ccf83755343cc',1,'ApiNewYear::IHttpClient']]],
+  ['getresponse',['getResponse',['../class_api_new_year_1_1_i_http_client.html#ad4a3fd42124d751cf234c5178b2f9d1b',1,'ApiNewYear::IHttpClient']]],
+  ['getsocket',['getSocket',['../class_api_new_year_1_1_i_http_client.html#a1ae9df4867d98129a3372ebe7f2fe90c',1,'ApiNewYear::IHttpClient::getSocket()'],['../class_api_new_year_1_1_i_socket.html#a44ab596d025e78b39f75426c6381da5e',1,'ApiNewYear::ISocket::getSocket()']]],
   ['geturi',['getUri',['../class_api_new_year_1_1_i_http_request.html#a286734ad3aa50bcd23c287ba06b4821c',1,'ApiNewYear::IHttpRequest']]],
   ['getversion',['getVersion',['../class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068',1,'ApiNewYear::IModule']]]
 ];

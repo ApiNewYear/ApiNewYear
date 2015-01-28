@@ -8,6 +8,7 @@ var class_api_new_year_1_1_i_module =
     [ "getPriority", "class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c", null ],
     [ "getVersion", "class_api_new_year_1_1_i_module.html#a6e783c78f65d2064d6429fc32d6a5068", null ],
     [ "hook", "class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03", null ],
+    [ "hook", "class_api_new_year_1_1_i_module.html#a2414877b30571eec386e449b50900924", null ],
     [ "init", "class_api_new_year_1_1_i_module.html#af98f6f9ee1238a83a361b35586c3630e", null ],
     [ "unhook", "class_api_new_year_1_1_i_module.html#aa63c01724a72c40ff95af1b712e48b57", null ]
 ];

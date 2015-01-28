@@ -122,6 +122,8 @@ $(document).ready(function(){initNavTree('class_api_new_year_1_1_i_module.html',
 Collaboration diagram for ApiNewYear::IModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_api_new_year_1_1_i_module__coll__graph.png" border="0" usemap="#_api_new_year_1_1_i_module_coll__map" alt="Collaboration graph"/></div>
+<map name="_api_new_year_1_1_i_module_coll__map" id="_api_new_year_1_1_i_module_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -132,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e97efceb8ef4922fb4c413db6a94a03"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03">hook</a> (<a class="el" href="class_api_new_year_1_1_i_execution_line.html">IExecutionLine</a> &amp;executionLine)=0</td></tr>
 <tr class="memdesc:a7e97efceb8ef4922fb4c413db6a94a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">hooks the module to the ExecutionLine  <a href="#a7e97efceb8ef4922fb4c413db6a94a03">More...</a><br /></td></tr>
 <tr class="separator:a7e97efceb8ef4922fb4c413db6a94a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2414877b30571eec386e449b50900924"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#a2414877b30571eec386e449b50900924">hook</a> (<a class="el" href="class_api_new_year_1_1_i_server.html">IServer</a> &amp;server)=0</td></tr>
+<tr class="memdesc:a2414877b30571eec386e449b50900924"><td class="mdescLeft">&#160;</td><td class="mdescRight">hooks the module to the Server  <a href="#a2414877b30571eec386e449b50900924">More...</a><br /></td></tr>
+<tr class="separator:a2414877b30571eec386e449b50900924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa63c01724a72c40ff95af1b712e48b57"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#aa63c01724a72c40ff95af1b712e48b57">unhook</a> (<a class="el" href="class_api_new_year_1_1_i_execution_line.html">IExecutionLine</a> &amp;executionLine)=0</td></tr>
 <tr class="memdesc:aa63c01724a72c40ff95af1b712e48b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">unhooks the module from the ExecutionLine  <a href="#aa63c01724a72c40ff95af1b712e48b57">More...</a><br /></td></tr>
 <tr class="separator:aa63c01724a72c40ff95af1b712e48b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +354,40 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2414877b30571eec386e449b50900924"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int ApiNewYear::IModule::hook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_api_new_year_1_1_i_server.html">IServer</a> &amp;&#160;</td>
+          <td class="paramname"><em>server</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>hooks the module to the Server </p>
+<p><a class="el" href="class_api_new_year_1_1_i_module.html" title="Base class representing the minimum requirements for a module. ">IModule</a> Hooks the module to the Server through <a class="el" href="class_api_new_year_1_1_i_server.html#a8618e620460ad1c3e3f4626d744a0e7a" title="Adds connection module. ">IServer::attach</a>, allowing the module to add itself as a connection module.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">server</td><td>Reference to <a class="el" href="class_api_new_year_1_1_i_server.html" title="Base class for the main loop of the ZIA server. ">IServer</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an int representing success or error code. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="af98f6f9ee1238a83a361b35586c3630e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -419,7 +458,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ApiNewYear</b></li><li class="navelem"><a class="el" href="class_api_new_year_1_1_i_module.html">IModule</a></li>
-    <li class="footer">Generated on Mon Jan 5 2015 23:39:08 for API New Year by
+    <li class="footer">Generated on Wed Jan 28 2015 18:38:16 for API New Year by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>
