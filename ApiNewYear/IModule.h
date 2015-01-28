@@ -10,6 +10,7 @@
 #define APINEWYEAR_IModule_H_
 
 #include <string>
+#include <eModuleType.h>
 
 namespace ApiNewYear {
 	class IExecutionLine;
@@ -84,6 +85,12 @@ namespace ApiNewYear {
 		 */
 		virtual int getPriority() const = 0;
 
+		/**
+		 * @brief Getter for type of the module.
+		 * @details Get's the type of the module.
+		 * @return enum corresponding to the type of the module.
+		 */
+		virtual eModuleType	getType() const = 0;
 		/**
 		 * @brief Getter for version of the module.
 		 * @details Get's the version of the module.
