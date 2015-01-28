@@ -14,6 +14,7 @@
 namespace ApiNewYear {
 	class IExecutionLine;
 	class ILogger;
+	class IServer;
 }
 
 namespace ApiNewYear {
@@ -44,6 +45,15 @@ namespace ApiNewYear {
 		 * @return an int representing success or error code.
 		 */
 		virtual int hook(IExecutionLine& executionLine)= 0;
+		/**
+		 * @brief hooks the module to the Server
+		 * @details IModule Hooks the module to the Server through IServer::attach, allowing the
+		 * module to add itself as a connection module.
+		 * 
+		 * @param server Reference to IServer
+		 * @return an int representing success or error code.
+		 */
+		virtual int hook(IServer& server) = 0;
 		/**
 		 * @brief unhooks the module from the ExecutionLine
 		 * @details IModule Unhooks the module from the ExecutionLine through IExecutionLine::detach,
