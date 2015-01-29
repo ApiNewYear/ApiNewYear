@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_api_new_year_1_1_i_http_query.html" title="Base class representing the minimum information needed for each HTTP Query (Request or Response) ..." alt="" coords="5,31,168,57"/>
-<area shape="rect" id="node2" href="$class_api_new_year_1_1_i_http_request.html" title="Base class representing the minimum information needed for each HTTP Request. " alt="" coords="221,5,397,32"/>
-<area shape="rect" id="node3" href="$class_api_new_year_1_1_i_http_response.html" title="Base class representing the minimum information needed for each HTTP Response. " alt="" coords="216,56,403,83"/>
-</map>

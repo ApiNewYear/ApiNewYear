@@ -58,6 +58,7 @@ var NAVTREEINDEX0 =
 "class_api_new_year_1_1_i_logger.html#aef8adc864af939ed5d3cd81b693c1169":[0,0,0,6,0],
 "class_api_new_year_1_1_i_module.html":[0,0,0,7],
 "class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26":[0,0,0,7,2],
+"class_api_new_year_1_1_i_module.html#a02626d2a1985e16e1368ac27be98b5bf":[0,0,0,7,12],
 "class_api_new_year_1_1_i_module.html#a05df59913732f4868e4e8b8553e303aa":[0,0,0,7,1],
 "class_api_new_year_1_1_i_module.html#a2414877b30571eec386e449b50900924":[0,0,0,7,9],
 "class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b":[0,0,0,7,3],

@@ -11,5 +11,6 @@ var class_api_new_year_1_1_i_module =
     [ "hook", "class_api_new_year_1_1_i_module.html#a7e97efceb8ef4922fb4c413db6a94a03", null ],
     [ "hook", "class_api_new_year_1_1_i_module.html#a2414877b30571eec386e449b50900924", null ],
     [ "init", "class_api_new_year_1_1_i_module.html#af98f6f9ee1238a83a361b35586c3630e", null ],
-    [ "unhook", "class_api_new_year_1_1_i_module.html#aa63c01724a72c40ff95af1b712e48b57", null ]
+    [ "unhook", "class_api_new_year_1_1_i_module.html#aa63c01724a72c40ff95af1b712e48b57", null ],
+    [ "unhook", "class_api_new_year_1_1_i_module.html#a02626d2a1985e16e1368ac27be98b5bf", null ]
 ];
