@@ -119,7 +119,7 @@ namespace ApiNewYear {
 		 * @details Get's the logger used by the module for logging runtime information.
 		 * @return reference to the logger.
 		 */
-		virtual ILogger& getLogger() const = 0;
+		virtual ILogger& getLogger() = 0;
 
 	protected:
 	private:
