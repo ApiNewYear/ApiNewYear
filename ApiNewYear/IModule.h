@@ -65,6 +65,15 @@ namespace ApiNewYear {
 		 */
 		virtual int unhook(IExecutionLine& executionLine)= 0;
 		/**
+		 * @brief unooks the module from the Server
+		 * @details IModule Unhooks the module from the Server through IServer::detach,
+		 * allowing the module to remove itself from the Server.
+		 * 
+		 * @param server Reference to IServer
+		 * @return int representing success or error code
+		 */
+		virtual int unhook(IServer& server)=0;
+		/**
 		 * @brief destroys the module.
 		 * @details IModule allows for the module to clean anything it needs prior to it's destruction.
 		 * @return an int representing success or error code.
