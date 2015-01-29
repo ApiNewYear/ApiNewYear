@@ -12,6 +12,10 @@
 #include <ISocket.h>
 
 namespace ApiNewYear {
+	class IHttpClient;
+}
+
+namespace ApiNewYear {
 	/**
 	 * @brief Base class allowing the execution of connection modules in IServer.
 	 * @details Establishes the base architecture to allow connection modules to be 
