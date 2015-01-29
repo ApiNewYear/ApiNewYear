@@ -3,7 +3,7 @@ var class_api_new_year_1_1_i_module =
     [ "~IModule", "class_api_new_year_1_1_i_module.html#adfa1240bfc7351c9d88681bb3f4f4793", null ],
     [ "destroy", "class_api_new_year_1_1_i_module.html#a05df59913732f4868e4e8b8553e303aa", null ],
     [ "getLocation", "class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26", null ],
-    [ "getLogger", "class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b", null ],
+    [ "getLogger", "class_api_new_year_1_1_i_module.html#a45972443fe248a3b145ede829d760199", null ],
     [ "getName", "class_api_new_year_1_1_i_module.html#a6ba42ed326b4159901973911c0d6c6a2", null ],
     [ "getPriority", "class_api_new_year_1_1_i_module.html#aa018a32795d4f847ea9e659cb9cdcb7c", null ],
     [ "getType", "class_api_new_year_1_1_i_module.html#a4e6b18a634258454b022e749dd3f2271", null ],

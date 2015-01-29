@@ -8,7 +8,7 @@ var searchData=
   ['gethttpclient',['getHttpClient',['../class_api_new_year_1_1_i_execution_line.html#a5251a5c5146e2cf4736acab8c9eee03b',1,'ApiNewYear::IExecutionLine']]],
   ['getip',['getIp',['../class_api_new_year_1_1_i_socket.html#aa7b741d5f9d698a1db19b0e40b166e63',1,'ApiNewYear::ISocket']]],
   ['getlocation',['getLocation',['../class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26',1,'ApiNewYear::IModule']]],
-  ['getlogger',['getLogger',['../class_api_new_year_1_1_i_module.html#a3d30949bf060481928066cd60865e66b',1,'ApiNewYear::IModule']]],
+  ['getlogger',['getLogger',['../class_api_new_year_1_1_i_module.html#a45972443fe248a3b145ede829d760199',1,'ApiNewYear::IModule']]],
   ['getmessage',['getMessage',['../class_api_new_year_1_1_i_http_response.html#aac01eec2876355a86d51d5954fc533da',1,'ApiNewYear::IHttpResponse']]],
   ['getmethod',['getMethod',['../class_api_new_year_1_1_i_http_request.html#ae241e64eb13d7ccaf53766bcf5ac9353',1,'ApiNewYear::IHttpRequest']]],
   ['getname',['getName',['../class_api_new_year_1_1_i_connection.html#a31634789493a3828ce4ac4551c4ad252',1,'ApiNewYear::IConnection::getName()'],['../class_api_new_year_1_1_i_module.html#a6ba42ed326b4159901973911c0d6c6a2',1,'ApiNewYear::IModule::getName()'],['../class_api_new_year_1_1_i_observer.html#a59e00e1c40c6be3a281731d01f6ee163',1,'ApiNewYear::IObserver::getName()']]],
