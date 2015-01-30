@@ -126,7 +126,7 @@ namespace ApiNewYear {
 		 * 
 		 * @param  constant string reference representing the configuration file location.
 		 */
-		virtual void setConfigFile(const std::string&)=0;
+		virtual void setConfFile(const std::string&)=0;
 		/**
 		 * @brief Getter for logger.
 		 * @details Get's the logger used by the module for logging runtime information.
