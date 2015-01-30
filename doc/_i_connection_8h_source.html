@@ -121,23 +121,27 @@ $(document).ready(function(){initNavTree('_i_connection_8h_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ISocket.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_api_new_year.html">ApiNewYear</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_api_new_year_1_1_i_connection.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_api_new_year_1_1_i_connection.html">IConnection</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_api_new_year_1_1_i_connection.html">IConnection</a>() {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_api_new_year_1_1_i_connection.html#a31634789493a3828ce4ac4551c4ad252">getName</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_connection.html#ad594e41ec8a375c71bcb6956cb9b9eaa">getPriority</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_connection.html#a6c31696d529aea6b8b7e1733af6608c2">update</a>(SOCKET socket, <a class="code" href="class_api_new_year_1_1_i_http_client.html">IHttpClient</a>* client)=0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">class </span>IHttpClient;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_api_new_year.html">ApiNewYear</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_api_new_year_1_1_i_connection.html">   25</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_api_new_year_1_1_i_connection.html">IConnection</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="class_api_new_year_1_1_i_connection.html">IConnection</a>() {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_api_new_year_1_1_i_connection.html#a31634789493a3828ce4ac4551c4ad252">getName</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_connection.html#ad594e41ec8a375c71bcb6956cb9b9eaa">getPriority</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_connection.html#a6c31696d529aea6b8b7e1733af6608c2">update</a>(SOCKET socket, <a class="code" href="class_api_new_year_1_1_i_http_client.html">IHttpClient</a>* client)=0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="namespace_api_new_year_html"><div class="ttname"><a href="namespace_api_new_year.html">ApiNewYear</a></div><div class="ttdef"><b>Definition:</b> eModuleType.h:12</div></div>
-<div class="ttc" id="class_api_new_year_1_1_i_connection_html"><div class="ttname"><a href="class_api_new_year_1_1_i_connection.html">ApiNewYear::IConnection</a></div><div class="ttdoc">Base class allowing the execution of connection modules in IServer. </div><div class="ttdef"><b>Definition:</b> IConnection.h:21</div></div>
+<div class="ttc" id="class_api_new_year_1_1_i_connection_html"><div class="ttname"><a href="class_api_new_year_1_1_i_connection.html">ApiNewYear::IConnection</a></div><div class="ttdoc">Base class allowing the execution of connection modules in IServer. </div><div class="ttdef"><b>Definition:</b> IConnection.h:25</div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_http_client_html"><div class="ttname"><a href="class_api_new_year_1_1_i_http_client.html">ApiNewYear::IHttpClient</a></div><div class="ttdoc">Base class representing the minimum information needed for each connecting client. </div><div class="ttdef"><b>Definition:</b> IHttpClient.h:25</div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_connection_html_a6c31696d529aea6b8b7e1733af6608c2"><div class="ttname"><a href="class_api_new_year_1_1_i_connection.html#a6c31696d529aea6b8b7e1733af6608c2">ApiNewYear::IConnection::update</a></div><div class="ttdeci">virtual int update(SOCKET socket, IHttpClient *client)=0</div><div class="ttdoc">Executes the function passed to the interfaces constructor. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_connection_html_a31634789493a3828ce4ac4551c4ad252"><div class="ttname"><a href="class_api_new_year_1_1_i_connection.html#a31634789493a3828ce4ac4551c4ad252">ApiNewYear::IConnection::getName</a></div><div class="ttdeci">virtual const std::string &amp; getName(void) const =0</div><div class="ttdoc">Getter for corresponding modules name. </div></div>
@@ -148,7 +152,7 @@ $(document).ready(function(){initNavTree('_i_connection_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fbd1bb9ddcd6ac54786aebcf0c3b2015.html">api_new_year</a></li><li class="navelem"><a class="el" href="dir_c3ed1d2180bd1a9007443173aba4e088.html">ApiNewYear</a></li><li class="navelem"><b>IConnection.h</b></li>
-    <li class="footer">Generated on Wed Jan 28 2015 19:29:18 for API New Year by
+    <li class="footer">Generated on Fri Jan 30 2015 10:15:35 for API New Year by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>
