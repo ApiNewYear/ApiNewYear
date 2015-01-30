@@ -122,7 +122,8 @@ $(document).ready(function(){initNavTree('class_api_new_year_1_1_i_module.html',
 Collaboration diagram for ApiNewYear::IModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_api_new_year_1_1_i_module__coll__graph.png" border="0" usemap="#_api_new_year_1_1_i_module_coll__map" alt="Collaboration graph"/></div>
-<!-- MAP 0 -->
+<map name="_api_new_year_1_1_i_module_coll__map" id="_api_new_year_1_1_i_module_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -160,9 +161,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00d8a0285252a76c4b286fb51bddeb26"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#a00d8a0285252a76c4b286fb51bddeb26">getLocation</a> () const =0</td></tr>
 <tr class="memdesc:a00d8a0285252a76c4b286fb51bddeb26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for location of the module.  <a href="#a00d8a0285252a76c4b286fb51bddeb26">More...</a><br /></td></tr>
 <tr class="separator:a00d8a0285252a76c4b286fb51bddeb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45972443fe248a3b145ede829d760199"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_api_new_year_1_1_i_logger.html">ILogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#a45972443fe248a3b145ede829d760199">getLogger</a> ()=0</td></tr>
-<tr class="memdesc:a45972443fe248a3b145ede829d760199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for logger.  <a href="#a45972443fe248a3b145ede829d760199">More...</a><br /></td></tr>
-<tr class="separator:a45972443fe248a3b145ede829d760199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40143fd2bdbab009f9111a52c0492b22"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#a40143fd2bdbab009f9111a52c0492b22">getConfFile</a> () const =0</td></tr>
+<tr class="memdesc:a40143fd2bdbab009f9111a52c0492b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the modules configuration file.  <a href="#a40143fd2bdbab009f9111a52c0492b22">More...</a><br /></td></tr>
+<tr class="separator:a40143fd2bdbab009f9111a52c0492b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac150de05b3d597ee9021758e39978adb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#ac150de05b3d597ee9021758e39978adb">setConfFile</a> (const std::string &amp;)=0</td></tr>
+<tr class="memdesc:ac150de05b3d597ee9021758e39978adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the modules configuration file.  <a href="#ac150de05b3d597ee9021758e39978adb">More...</a><br /></td></tr>
+<tr class="separator:ac150de05b3d597ee9021758e39978adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d8ee2effc19ea4b142059a12cc81bc"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_api_new_year_1_1_i_logger.html">ILogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_module.html#ad7d8ee2effc19ea4b142059a12cc81bc">getLogger</a> () const =0</td></tr>
+<tr class="memdesc:ad7d8ee2effc19ea4b142059a12cc81bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for logger.  <a href="#ad7d8ee2effc19ea4b142059a12cc81bc">More...</a><br /></td></tr>
+<tr class="separator:ad7d8ee2effc19ea4b142059a12cc81bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class representing the minimum requirements for a module. </p>
@@ -195,6 +202,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a40143fd2bdbab009f9111a52c0492b22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::string&amp; ApiNewYear::IModule::getConfFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter for the modules configuration file. </p>
+<p>Get's the location of the modules configuration file on the disk. </p><dl class="section return"><dt>Returns</dt><dd>string representing the configuration file location. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a00d8a0285252a76c4b286fb51bddeb26"></a>
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +254,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a45972443fe248a3b145ede829d760199"></a>
+<a class="anchor" id="ad7d8ee2effc19ea4b142059a12cc81bc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -229,10 +262,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_api_new_year_1_1_i_logger.html">ILogger</a>&amp; ApiNewYear::IModule::getLogger </td>
+          <td class="memname">virtual const <a class="el" href="class_api_new_year_1_1_i_logger.html">ILogger</a>&amp; ApiNewYear::IModule::getLogger </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -446,6 +479,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac150de05b3d597ee9021758e39978adb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ApiNewYear::IModule::setConfFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter for the modules configuration file. </p>
+<p>Sets the modules configuration file location on the disk.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constant</td><td>string reference representing the configuration file location. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aa63c01724a72c40ff95af1b712e48b57"></a>
 <div class="memitem">
 <div class="memproto">
@@ -523,7 +589,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ApiNewYear</b></li><li class="navelem"><a class="el" href="class_api_new_year_1_1_i_module.html">IModule</a></li>
-    <li class="footer">Generated on Thu Jan 29 2015 15:33:46 for API New Year by
+    <li class="footer">Generated on Fri Jan 30 2015 10:15:35 for API New Year by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>
