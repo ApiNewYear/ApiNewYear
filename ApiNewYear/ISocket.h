@@ -36,6 +36,13 @@ namespace ApiNewYear {
 		 */
 		virtual SOCKET getSocket(void) const=0;
 		/**
+		 * @brief Setter for socket
+		 * @details ISocket sets the socket/
+		 * 
+		 * @param sd the socket
+		 */
+		virtual void setSocket(SOCKET sd)=0;
+		/**
 		 * @brief Getter for IP address.
 		 * @details ISocket get IP address of client using socket.
 		 * @return a constant string reference containing the IP address.
@@ -53,7 +60,19 @@ namespace ApiNewYear {
 		 * @return int representing the port number.
 		 */
 		virtual int getPort(void) const=0;
-
+		/**
+		 * @brief Getter for sockaddr used by the socket.
+		 * @details ISocket get the sockaddr used by the socket
+		 * @return const pointer to the sockaddr
+		 */
+		virtual const struct sockaddr* getSockInfo() const=0;
+		/**
+		 * @brief Setter for sockaddr used by the socket.
+		 * @details ISocket set the sockaddr used by the socket.
+		 * 
+		 * @param sockaddr pointer to the sockaddr
+		 */
+		void setSockInfo(struct sockaddr*);
 	protected:
 
 	private:
