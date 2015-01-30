@@ -18,7 +18,7 @@ namespace ApiNewYear {
 	 * @details Establishes the base architecture for all HTTP Requests used by the server.
 	 *
 	 */
-	class IHttpRequest: public IHttpQuery {
+	class IHttpRequest: public virtual IHttpQuery {
 	public:
 		virtual ~IHttpRequest() {
 		}
