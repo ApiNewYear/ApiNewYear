@@ -72,7 +72,7 @@ namespace ApiNewYear {
 		 * 
 		 * @param sockaddr pointer to the sockaddr
 		 */
-		void setSockInfo(struct sockaddr*);
+		virtual void setSockInfo(struct sockaddr*) = 0;
 	protected:
 
 	private:
