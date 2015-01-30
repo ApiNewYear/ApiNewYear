@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('_i_socket_8h_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_api_new_year_1_1_i_socket.html#a39382074bf1356fe8249743a0885b0c3">getHost</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>=0;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_api_new_year_1_1_i_socket.html#a58f83e0d99158add7c271bbac47d3e04">getPort</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>=0;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keyword">struct </span>sockaddr* <a class="code" href="class_api_new_year_1_1_i_socket.html#abac104d1233dd68f5d128ecfda7a0e1e">getSockInfo</a>() <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_api_new_year_1_1_i_socket.html#a9acab95a129f0ef8d5edab3e8c406861">setSockInfo</a>(<span class="keyword">struct</span> sockaddr*);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_api_new_year_1_1_i_socket.html#a36a208ab16288e1c29ed8eab9133255c">setSockInfo</a>(<span class="keyword">struct</span> sockaddr*) = 0;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">private</span>:</div>
@@ -154,8 +154,8 @@ $(document).ready(function(){initNavTree('_i_socket_8h_source.html','');});
 <div class="ttc" id="namespace_api_new_year_html"><div class="ttname"><a href="namespace_api_new_year.html">ApiNewYear</a></div><div class="ttdef"><b>Definition:</b> eModuleType.h:12</div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_socket_html_abac104d1233dd68f5d128ecfda7a0e1e"><div class="ttname"><a href="class_api_new_year_1_1_i_socket.html#abac104d1233dd68f5d128ecfda7a0e1e">ApiNewYear::ISocket::getSockInfo</a></div><div class="ttdeci">virtual const struct sockaddr * getSockInfo() const =0</div><div class="ttdoc">Getter for sockaddr used by the socket. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_socket_html_a1fe56c5afbac22d5074e0ec7e6f51e38"><div class="ttname"><a href="class_api_new_year_1_1_i_socket.html#a1fe56c5afbac22d5074e0ec7e6f51e38">ApiNewYear::ISocket::setSocket</a></div><div class="ttdeci">virtual void setSocket(SOCKET sd)=0</div><div class="ttdoc">Setter for socket. </div></div>
-<div class="ttc" id="class_api_new_year_1_1_i_socket_html_a9acab95a129f0ef8d5edab3e8c406861"><div class="ttname"><a href="class_api_new_year_1_1_i_socket.html#a9acab95a129f0ef8d5edab3e8c406861">ApiNewYear::ISocket::setSockInfo</a></div><div class="ttdeci">void setSockInfo(struct sockaddr *)</div><div class="ttdoc">Setter for sockaddr used by the socket. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_socket_html_a58f83e0d99158add7c271bbac47d3e04"><div class="ttname"><a href="class_api_new_year_1_1_i_socket.html#a58f83e0d99158add7c271bbac47d3e04">ApiNewYear::ISocket::getPort</a></div><div class="ttdeci">virtual int getPort(void) const =0</div><div class="ttdoc">Getter for Port number. </div></div>
+<div class="ttc" id="class_api_new_year_1_1_i_socket_html_a36a208ab16288e1c29ed8eab9133255c"><div class="ttname"><a href="class_api_new_year_1_1_i_socket.html#a36a208ab16288e1c29ed8eab9133255c">ApiNewYear::ISocket::setSockInfo</a></div><div class="ttdeci">virtual void setSockInfo(struct sockaddr *)=0</div><div class="ttdoc">Setter for sockaddr used by the socket. </div></div>
 <div class="ttc" id="class_api_new_year_1_1_i_socket_html_a44ab596d025e78b39f75426c6381da5e"><div class="ttname"><a href="class_api_new_year_1_1_i_socket.html#a44ab596d025e78b39f75426c6381da5e">ApiNewYear::ISocket::getSocket</a></div><div class="ttdeci">virtual SOCKET getSocket(void) const =0</div><div class="ttdoc">Base class representing minimum information needed for sockets. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('_i_socket_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_fbd1bb9ddcd6ac54786aebcf0c3b2015.html">api_new_year</a></li><li class="navelem"><a class="el" href="dir_c3ed1d2180bd1a9007443173aba4e088.html">ApiNewYear</a></li><li class="navelem"><b>ISocket.h</b></li>
-    <li class="footer">Generated on Fri Jan 30 2015 13:34:38 for API New Year by
+    <li class="footer">Generated on Fri Jan 30 2015 14:23:20 for API New Year by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

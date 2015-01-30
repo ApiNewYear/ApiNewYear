@@ -146,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abac104d1233dd68f5d128ecfda7a0e1e"><td class="memItemLeft" align="right" valign="top">virtual const struct sockaddr *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_socket.html#abac104d1233dd68f5d128ecfda7a0e1e">getSockInfo</a> () const =0</td></tr>
 <tr class="memdesc:abac104d1233dd68f5d128ecfda7a0e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for sockaddr used by the socket.  <a href="#abac104d1233dd68f5d128ecfda7a0e1e">More...</a><br /></td></tr>
 <tr class="separator:abac104d1233dd68f5d128ecfda7a0e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9acab95a129f0ef8d5edab3e8c406861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_socket.html#a9acab95a129f0ef8d5edab3e8c406861">setSockInfo</a> (struct sockaddr *)</td></tr>
-<tr class="memdesc:a9acab95a129f0ef8d5edab3e8c406861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for sockaddr used by the socket.  <a href="#a9acab95a129f0ef8d5edab3e8c406861">More...</a><br /></td></tr>
-<tr class="separator:a9acab95a129f0ef8d5edab3e8c406861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a208ab16288e1c29ed8eab9133255c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_api_new_year_1_1_i_socket.html#a36a208ab16288e1c29ed8eab9133255c">setSockInfo</a> (struct sockaddr *)=0</td></tr>
+<tr class="memdesc:a36a208ab16288e1c29ed8eab9133255c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for sockaddr used by the socket.  <a href="#a36a208ab16288e1c29ed8eab9133255c">More...</a><br /></td></tr>
+<tr class="separator:a36a208ab16288e1c29ed8eab9133255c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class representing minimum information needed for sockets. </p>
@@ -321,18 +321,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9acab95a129f0ef8d5edab3e8c406861"></a>
+<a class="anchor" id="a36a208ab16288e1c29ed8eab9133255c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ApiNewYear::ISocket::setSockInfo </td>
+          <td class="memname">virtual void ApiNewYear::ISocket::setSockInfo </td>
           <td>(</td>
           <td class="paramtype">struct sockaddr *&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Setter for sockaddr used by the socket. </p>
@@ -355,7 +363,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ApiNewYear</b></li><li class="navelem"><a class="el" href="class_api_new_year_1_1_i_socket.html">ISocket</a></li>
-    <li class="footer">Generated on Fri Jan 30 2015 13:34:38 for API New Year by
+    <li class="footer">Generated on Fri Jan 30 2015 14:23:20 for API New Year by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

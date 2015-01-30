@@ -7,5 +7,5 @@ var class_api_new_year_1_1_i_socket =
     [ "getSocket", "class_api_new_year_1_1_i_socket.html#a44ab596d025e78b39f75426c6381da5e", null ],
     [ "getSockInfo", "class_api_new_year_1_1_i_socket.html#abac104d1233dd68f5d128ecfda7a0e1e", null ],
     [ "setSocket", "class_api_new_year_1_1_i_socket.html#a1fe56c5afbac22d5074e0ec7e6f51e38", null ],
-    [ "setSockInfo", "class_api_new_year_1_1_i_socket.html#a9acab95a129f0ef8d5edab3e8c406861", null ]
+    [ "setSockInfo", "class_api_new_year_1_1_i_socket.html#a36a208ab16288e1c29ed8eab9133255c", null ]
 ];

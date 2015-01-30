@@ -7,7 +7,7 @@ var searchData=
   ['setmessage',['setMessage',['../class_api_new_year_1_1_i_http_response.html#a10f6fd26399eb32a7e6e95ab37d10dcf',1,'ApiNewYear::IHttpResponse']]],
   ['setmethod',['setMethod',['../class_api_new_year_1_1_i_http_request.html#aa913d5fe46e0b2f71323a6953222e15a',1,'ApiNewYear::IHttpRequest']]],
   ['setsocket',['setSocket',['../class_api_new_year_1_1_i_socket.html#a1fe56c5afbac22d5074e0ec7e6f51e38',1,'ApiNewYear::ISocket']]],
-  ['setsockinfo',['setSockInfo',['../class_api_new_year_1_1_i_socket.html#a9acab95a129f0ef8d5edab3e8c406861',1,'ApiNewYear::ISocket']]],
+  ['setsockinfo',['setSockInfo',['../class_api_new_year_1_1_i_socket.html#a36a208ab16288e1c29ed8eab9133255c',1,'ApiNewYear::ISocket']]],
   ['seturi',['setUri',['../class_api_new_year_1_1_i_http_request.html#a384616b8979ac69deea76b9e0caf5967',1,'ApiNewYear::IHttpRequest']]],
   ['stop',['stop',['../class_api_new_year_1_1_i_execution_line.html#a705f08254b0d16ce0567c4b03cf28bc4',1,'ApiNewYear::IExecutionLine']]]
 ];
