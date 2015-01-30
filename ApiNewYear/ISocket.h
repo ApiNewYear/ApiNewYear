@@ -14,6 +14,8 @@
 #ifdef _WIN32
 #include <winsock2.h>
 #elif defined (__linux__)
+#include <sys/types.h>
+ #include <sys/socket.h>
 typedef int SOCKET;
 #else
 #error undefined for this platform
