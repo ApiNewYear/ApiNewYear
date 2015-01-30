@@ -28,28 +28,28 @@ namespace ApiNewYear {
 		 *
 		 * @param message a string representing the information.
 		 */
-		virtual void info(const std::string& message)=0;
+		virtual void info(const std::string& message) const=0;
 		/**
 		 * @brief Output warning to stream.
 		 * @details ILogger appends a warning to a stream.
 		 *
 		 * @param message a string representing the information.
 		 */
-		virtual void warn(const std::string& message)=0;
+		virtual void warn(const std::string& message) const=0;
 		/**
 		 * @brief Output error to stream.
 		 * @details ILogger appends an error to a stream.
 		 *
 		 * @param message a string representing the information.
 		 */
-		virtual void error(const std::string& message)=0;
+		virtual void error(const std::string& message) const=0;
 		/**
 		 * @brief Output fatal error to stream.
 		 * @details ILogger appends a fatal error to a stream.
 		 *
 		 * @param message a string representing the information.
 		 */
-		virtual void fatal(const std::string& message)=0;
+		virtual void fatal(const std::string& message) const=0;
 
 	protected:
 

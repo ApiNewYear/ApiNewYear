@@ -113,13 +113,26 @@ namespace ApiNewYear {
 		 * @return constant string reference containing the location.
 		 */
 		virtual const std::string& getLocation() const = 0;
-
+		/**
+		 * @brief Getter for the modules configuration file
+		 * @details Get's the location of the modules configuration file
+		 * on the disk.
+		 * @return string representing the configuration file location.
+		 */
+		virtual const std::string& getConfFile() const = 0;
+		/**
+		 * @brief Setter for the modules configuration file
+		 * @details Sets the modules configuration file location on the disk.
+		 * 
+		 * @param  constant string reference representing the configuration file location.
+		 */
+		virtual void setConfigFile(const std::string&)=0;
 		/**
 		 * @brief Getter for logger.
 		 * @details Get's the logger used by the module for logging runtime information.
 		 * @return reference to the logger.
 		 */
-		virtual ILogger& getLogger() = 0;
+		virtual const ILogger& getLogger() const= 0;
 
 	protected:
 	private:

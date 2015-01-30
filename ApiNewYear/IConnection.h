@@ -40,7 +40,7 @@ namespace ApiNewYear {
 		virtual int getPriority(void) const=0;
 		/**
 		 * @brief Executes the function passed to the interfaces constructor.
-		 * @details IObserver executes the modules main function through a function pointer.
+		 * @details IConnection executes the modules main function through a function pointer.
 		 *
 		 * @param socket server's listening socket.
 		 * @param client pointer to the clients information (to be filled!).
